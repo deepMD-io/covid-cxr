@@ -14,10 +14,10 @@ from tensorflow.keras.models import save_model
 from tensorflow.keras.callbacks import EarlyStopping, TensorBoard, ReduceLROnPlateau
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorboard.plugins.hparams import api as hp
-from src.models.models import *
-from src.visualization.visualize import *
-from src.custom.metrics import F1Score
-from src.data.preprocess import remove_text
+from models.models import *
+from visualization.visualize import *
+from custom.metrics import F1Score
+from data.preprocess import remove_text
 
 def get_class_weights(histogram, class_multiplier=None):
     '''
