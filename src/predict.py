@@ -9,8 +9,8 @@ from datetime import datetime
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from lime.wrappers.scikit_image import SegmentationAlgorithm
-from src.data.preprocess import remove_text
-from src.visualization.visualize import visualize_explanation
+from data.preprocess import remove_text
+from visualization.visualize import visualize_explanation
 
 
 def predict_instance(x, model):
